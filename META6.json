@@ -1,22 +1,37 @@
 {
-  "name" : "Object::Permission::Group",
-  "tags" : [ "devel", "authorisation", "object", "user", "unix" ],
-  "authors" : [ "Jonathan Stowe <jns+git@gellyfish.co.uk>" ],
-  "author" : "Jonathan Stowe <jns+git@gellyfish.co.uk>",
-  "auth" : "github:jonathanstowe",
-  "support" : {
-    "source" : "git://github.com/jonathanstowe/Object-Permission-Group.git"
+  "name": "Object::Permission::Group",
+  "support": {
+    "source": "https://github.com/samcv/Object-Permission-Group",
+    "bugtracker": "https://github.com/samcv/Object-Permission-Group/issues"
   },
-  "source-url" : "git://github.com/jonathanstowe/Object-Permission-Group.git",
-  "perl" : "6.c",
-  "build-depends" : [ ],
-  "provides" : {
-     "Object::Permission::Group" : "lib/Object/Permission/Group.pm"
+  "source-url": "git://github.com/samcv/Object-Permission-Group.git",
+  "perl": "6.c",
+  "author": "Jonathan Stowe <jns+git@gellyfish.co.uk>",
+  "build-depends": [
+    
+  ],
+  "auth": "github:samcv",
+  "depends": [
+    "Object::Permission",
+    "Unix::Groups"
+  ],
+  "license": "Artistic-2.0",
+  "tags": [
+    "devel",
+    "authorisation",
+    "object",
+    "user",
+    "unix"
+  ],
+  "provides": {
+    "Object::Permission::Group": "lib/Object/Permission/Group.pm"
   },
-  "depends" : [ "Object::Permission", "Unix::Groups" ],
-  "test-depends" : [
+  "test-depends": [
     "Test"
   ],
-  "description" : "Object helper for Object::Permission using unix groups.",
-  "version" : "0.0.2"
+  "version": "0.0.2",
+  "authors": [
+    "Jonathan Stowe <jns+git@gellyfish.co.uk>"
+  ],
+  "description": "Object helper for Object::Permission using unix groups."
 }
